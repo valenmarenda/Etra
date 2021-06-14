@@ -1,0 +1,47 @@
+.container-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 2rem;
+}
+
+.nosotros-info{
+    width: 100%;
+    padding: 2rem;
+}
+.container-nosotros img{
+    width: 90%;
+    height: auto;
+}
+
+.nosotros-section p{
+    margin:0 0 1rem 0;
+}
+
+.nosotros-bibografía{
+    padding: 2rem;
+}
+
+@media (min-width: 768px){
+    .container-nosotros{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .nosotros-info{
+        padding: 3rem;
+    }
+
+    .container-nosotros img{
+        width: 50%;
+        height: auto;
+        padding: 3rem;
+    }
+
+    .nosotros-bibografía{
+        padding: 3rem ;
+    }
+}

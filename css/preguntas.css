@@ -1,0 +1,73 @@
+.container-preguntas p{
+margin: 0;
+}
+.container-preguntas button{
+    margin: 0;
+}
+
+
+
+.container-preguntas .card .card-header h2{
+width: 100%;
+margin: 0!important;
+background-color: transparent;
+height: fit-content;
+}
+
+.container-preguntas .card-header{
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: transparent;
+}
+
+.card-body p{
+    font-size: 1.5rem;
+}
+
+.card .card-header button{
+    width: 30rem;
+    border-radius: 0;
+    padding: 1rem;
+    width: 30rem;
+    text-align: start;
+}
+.card .card-header button .collapsed{
+    width: 30rem;
+}
+.card .card-body{
+    width: 30rem;
+}
+.container-preguntas{
+    margin: 2rem 3rem;
+}
+
+
+@media (min-width: 768px){
+    .container-taller{
+        align-items: flex-start;
+    }
+    .container-preguntas{
+        margin-top: 1rem;
+        margin-right: 0;
+        width: 50%;
+    }
+    .card .card-header button .collapsed{
+        width: 100%;
+    }
+    .card .card-header button{
+        width: 100%;
+    }
+    .card .card-body{
+        width: 100%;
+    }
+    .talleres-container{
+        height: 40rem;
+    }
+}
+
+@media (min-width: 900px){
+    .container-preguntas{
+        width: 100%;
+    }
+}
