@@ -2,7 +2,7 @@
 display: grid;
 grid-template-columns: 1fr;
     justify-items: center;
-    background-color: #fae7ce;
+    background-color: #fffddc;
     margin: 1rem auto;
     width: 95%;
     padding-top: 2rem;
@@ -96,6 +96,6 @@ color: black;
         padding: 1rem;
     }
     .contacto-container1 p {
-        margin: 2rem 0 0 3rem;
+        margin: 2rem 0 0 10%;
     }
 }

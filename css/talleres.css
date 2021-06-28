@@ -1,7 +1,7 @@
 .talleres-container h3{
     text-align: left;
-    font-size: 2.8rem;
-    margin: 0;
+    font-size:3rem;
+    margin: 0!important;
     overflow: visible;
     font-weight: 500;
 }
@@ -15,7 +15,7 @@
     width: 9rem;
     height: fit-content;
     border-bottom: 2px solid #ff9000;
-    margin: 2rem 4rem;
+    margin: 0 4rem;
     
 }
 
@@ -46,6 +46,7 @@
 }
 .container-taller p{
     margin-left: 4rem;
+    font-size: 1.5rem;
 }
 
 
@@ -60,6 +61,10 @@
     color: black;
     transition: 1s;
 }
+
+.talleres-info{
+    margin-top: 2rem;
+}
 @media (min-width: 768px){
     .container-taller img{
         width: 30rem;
@@ -69,6 +74,7 @@
     .talleres-info{
         width: 50%;
         margin-left: 2rem;
+        margin-top: 0;
     }
 
     .container-taller {
@@ -76,9 +82,38 @@
         flex-direction: row;
         margin: 0 4rem 2rem 4rem;
         column-gap: 3rem;
-        justify-content: flex-start;
+        justify-content: center;
+        justify-items:flex-start;
+        align-items: flex-start;
+    }
+
+    .modal2{
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0;
+        transition: 0.25s ease-out;
+        display: flex;
+        justify-content: center;
         justify-items: center;
+        
+    }
+    .modal2.open{
+        opacity: 1;
+        pointer-events: all;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
         align-items: center;
+    }
+    .full-img{
+        position: absolute;
+        height: 70%;
+        left: none;
+        transition: all 0.25s ease-out;
     }
 }
 
@@ -89,21 +124,67 @@
 
     }
     .talleres-info{
-        width: 60%;
-        margin-left: 2rem;
+        width: 100%;
+        padding-right: 3rem;
     }
 
     .container-taller {
-        display: flex;
-        flex-direction: row;
-        margin: 0 4rem 2rem 4rem;
-        column-gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 1rem;
         justify-content: flex-start;
         justify-items: center;
-        align-items: center;
+        align-items: flex-start;
     }
-    .talleres-container{
-        padding-left: 8rem;
+}
+
+/*capacitaciones*/
+
+.section3 img{
+    width: 40rem;
+    padding: 0 1rem;
+}
+@media (min-width: 600px){
+    .container-section3{
+        display: flex;
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+    .section3{
+        padding: 0 3rem;
     }
 
+    .section3 img{
+        width: 45%;
+        padding: 0 1rem;
+    }
+}
+
+/* Itinerante */
+.section4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 2rem;
+    margin: 3rem 0;
+}
+
+.img-container{
+    width: 30rem;
+}
+.img-container img{
+    width: 30rem;
+}
+
+@media (min-width: 840px){
+    .section4{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .img-container{
+        width: 20rem;
+    }
+    .img-container img{
+        width: 20rem;
+    }
 }

@@ -1,4 +1,5 @@
 const modal = document.querySelector(".modall");
+
 const previews = document.querySelectorAll(".gallery img");
 const original = document.querySelector(".full-img");
 
@@ -17,4 +18,7 @@ modal.addEventListener("click", (e)=> {
         original.classList.remove("open")
     }
 })
+
+
+
 

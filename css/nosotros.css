@@ -24,7 +24,18 @@
 .nosotros-bibografía{
     padding: 2rem;
 }
+.carousel-colaboradores{
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}
 
+.carousel-item p{
+    font-size: 1.2rem;
+    margin: 0;
+    background-color: rgba(255, 253, 220, 0.9);
+    text-align: center;
+}
 @media (min-width: 768px){
     .container-nosotros{
         display: flex;
@@ -43,5 +54,12 @@
 
     .nosotros-bibografía{
         padding: 3rem ;
+    }
+    .section2 {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-colaboradores{
+        width: 50%;
     }
 }

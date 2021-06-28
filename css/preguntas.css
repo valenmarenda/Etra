@@ -50,7 +50,7 @@ height: fit-content;
     .container-preguntas{
         margin-top: 1rem;
         margin-right: 0;
-        width: 50%;
+        width: 40%;
     }
     .card .card-header button .collapsed{
         width: 100%;
@@ -70,4 +70,14 @@ height: fit-content;
     .container-preguntas{
         width: 100%;
     }
+    .container-preguntas{
+        padding-right: 5rem;
+    }
+}
+
+.container-taller .container-preguntas button{
+background-color: #fffddc;
+border-color: #fffddc;
+color: black;
+font-weight: 500;
 }

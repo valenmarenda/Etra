@@ -47,9 +47,14 @@ p{
     width: 100%;
     flex-direction: column;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
 }
 .nav-header img{
-    width: 15rem;
+    width: 10rem;
     margin: 2rem 0;
 }
 
@@ -60,8 +65,22 @@ p{
     justify-content: space-around;
     justify-items: center;
 }
+.nav-pages a{
+    font-family: 'Bitter', serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #480a0a;
+    font-weight: bold;
+    transition: 1s;
+    margin: 0;
+}
+.nav-header .nav-pages a:hover{
+    color: #ff9000;
+    transition: 1s;
 
-@media (max-width: 600px){
+}
+
+@media (max-width: 768px){
     .nav-header .nav-pages{
         display: flex;
         flex-direction: column;
@@ -73,27 +92,22 @@ p{
     .nav-pages{
         padding-bottom: 0;
     }
+    .nav-header .nav-pages a{
+
+        font-size: 1.5rem;
+        margin: 0;
+
+    }
 
 }
 
-.nav-header .nav-pages a{
-    font-family: 'Bitter', serif;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #480a0a;
-    font-weight: bold;
-    transition: 1s;
-}
-.nav-header .nav-pages a:hover{
-    color: #ff9000;
-    transition: 1s;
-}
+
 header{
     font-family: 'Bitter', serif;
 }
 .section1{
     width: 100%;
-    background-image: url("../img/3696033.jpg");
+    background-image: url("../img/inicio3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -121,17 +135,14 @@ letter-spacing: 0.1rem;
     transition: 1s;
 }
 
+
+
 /* galería */
 
 .img-container img{
-    width: 20rem;
+    width: 30rem;
     border-radius: 10px;
     transition: 1s;
-}
-.img-container-rectangulo img{
-    object-fit: cover;
-    width: 20rem;
-     height: 30rem;
 }
 
 .section2 {
@@ -139,9 +150,10 @@ letter-spacing: 0.1rem;
     display: grid;
     justify-content: center;
     row-gap: 1rem;
+    
 }
 .img-container {
-    width: 20rem;
+    width: 30rem;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -153,12 +165,20 @@ letter-spacing: 0.1rem;
     cursor: pointer;
 }
 
-@media (min-width: 600px){
+@media (min-width: 768px){
+    .img-container {
+        width: 20rem;
+    }
+    
+   .img-container img{
+    width: 20rem;
+    }
     .section2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         grid-row-gap: 2rem;
+        margin: 5rem 0 6rem 0;
 
     }
     .modall{
@@ -171,19 +191,22 @@ letter-spacing: 0.1rem;
         pointer-events: none;
         opacity: 0;
         transition: 0.25s ease-out;
+        display: flex;
+        justify-content: center;
         
     }
     .modall.open{
         opacity: 1;
         pointer-events: all;
         z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .full-img{
         position: absolute;
         height: 70%;
-        top: 10%;
-        left: 38%;
-    
+
         transition: all 0.25s ease-out;
     }
     .full-img.open{
@@ -193,6 +216,16 @@ letter-spacing: 0.1rem;
         top: 0;
     }
     
+}
+
+@media (min-width: 1000px){
+    .img-container {
+        width: 30rem;
+    }
+    
+   .img-container img{
+    width: 30rem;
+    }
 }
 
 /* Capacitaciones */
