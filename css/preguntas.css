@@ -29,7 +29,7 @@ height: fit-content;
     width: 30rem;
     border-radius: 0;
     padding: 1rem;
-    width: 30rem;
+    width: 35rem;
     text-align: start;
 }
 .card .card-header button .collapsed{
@@ -39,7 +39,7 @@ height: fit-content;
     width: 30rem;
 }
 .container-preguntas{
-    margin: 2rem 3rem;
+    margin: 2rem 1rem;
 }
 
 
@@ -80,4 +80,10 @@ background-color: #fffddc;
 border-color: #fffddc;
 color: black;
 font-weight: 500;
+}
+
+ .fa-chevron-down {
+position: absolute;
+right: 10px;
+
 }
